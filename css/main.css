@@ -1,0 +1,37 @@
+@import "./reset.css";
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nunito:wght@800&family=Oswald:wght@300;600&display=swap');
+
+
+:root{
+    --container-width: 1440px;
+    --container-padding: 15px;
+}
+
+header{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-color: #F5F5F5;
+    color: #2D2A2A;
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.none{
+    display: none !important;
+}
+
+.container {
+
+}
