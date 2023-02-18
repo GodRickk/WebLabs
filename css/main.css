@@ -100,3 +100,32 @@ footer {
 }
 
 
+.wellcome {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/main/wellcome-image.jpg);
+    height: 774px;
+}
+
+.wellcome-text__container {
+    padding-left: 23px;
+    padding-top: 150px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 460px;
+    height: 595px;
+    /* display: inline-block; */
+}
+
+.wellcome-text__item {
+    
+}
+
+
+
+
