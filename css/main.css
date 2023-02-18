@@ -49,13 +49,29 @@ footer {
 }
 
 
-.header__border {
+.header__nav-border-line {
     position: absolute;
     width: 100%;
     height: 0px;
     left: 0px;
-    margin-top: 187px;
-    border: 2px solid #777777;
+    top: 187px;
+    border: 1px solid #777777;
+}
+
+
+/*навигационное меню*/
+
+.header__navmenu {
+    width: 445px;
+    height: 31px;
+    padding-top: 167px;
+    padding-left: 317px;
+    column-gap: 67px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*font-weight: 700;*/
 }
 
 .header__navmenu-item {
@@ -70,5 +86,17 @@ footer {
 
 }
 
+
+.header__navmenu-brands {
+
+}
+
+.header__navmenu-newitems {
+
+}
+
+.header__navmenu-sales {
+
+}
 
 
