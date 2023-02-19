@@ -176,12 +176,6 @@ footer {
     border-bottom-color: inherit
 }
 
-
-/* .liner-title span {
-    display: inline-block;
-    vertical-align: middle;
-} */
-
 .liner-title {
     content:'';
     font-family: 'Oswald';
@@ -196,6 +190,22 @@ footer {
     vertical-align: middle;
 }
 
+
+
+.brands__container {
+    margin: auto;
+    padding-top: 66px;
+    padding-left: 113px;
+    padding-right: 114px;
+    max-width: 1215px;
+    width: 1215px;
+    display: flex;
+    justify-content: center;
+    column-gap: 157px;
+}
+
+
+/*Галлерея кросовок???*/
 
 
 /* В подвал его! */
