@@ -15,6 +15,11 @@ header{
 
 }
 
+/* html {
+    box-sizing: border-box;
+    min-width: 665px;
+  } */
+
 /*body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
@@ -87,6 +92,7 @@ footer {
 }
 
 
+
 .header__navmenu-brands {
 
 }
@@ -98,6 +104,8 @@ footer {
 .header__navmenu-sales {
 
 }
+
+
 
 
 /* Приветствие */
@@ -120,7 +128,8 @@ footer {
     color: #FFFFFF;
     width: 460px;
     height: 595px;
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
 }
 
 .wellcome-text__item {
@@ -128,12 +137,68 @@ footer {
 }
 
 
+
+/* Главный контент */
 .main-content__container {
      min-height: 843px;
      background-color: #F5F5F5;
 }
 
 
+.liner__container {
+    padding-top: 19px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #777777;
+    flex-direction: row;
+}
+
+.liner__container:before {
+    margin-right: 20px;
+    content: "";
+    display: block;
+    flex: 1 1 auto;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit
+}
+
+.liner__container::after {
+    margin-left: 20px;
+    content: "";
+    display: block;
+    flex: 1 1 auto;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: inherit
+}
+
+
+/* .liner-title span {
+    display: inline-block;
+    vertical-align: middle;
+} */
+
+.liner-title {
+    content:'';
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    color: #2D2A2A;
+    /* margin-top: 19px; */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/* В подвал его! */
 .footer {
     min-height: 250px;
     width: 100%;
