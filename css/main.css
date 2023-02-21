@@ -45,7 +45,9 @@ footer {
     width: 228px;
     height: 164px;
     left: 0px;
-    top: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -65,7 +67,7 @@ footer {
     width: 445px;
     height: 31px;
     padding-top: 167px;
-    padding-left: 317px;
+    padding-left: 492px;
     column-gap: 67px;
     background-color: #F5F5F5;
     display: flex;
@@ -127,10 +129,14 @@ footer {
     display: flex;
 }
 
-.wellcome-text__item {
-    
-}
 
+.wellcome-text__item {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
 
 
 /* Главный контент */
@@ -244,3 +250,42 @@ footer {
     font-size: 100%;
 }
 
+
+
+
+@media  only screen and (max-width: 1024px) {
+    .header__logo {
+        width: 228px;;
+        height: 164px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 720px) {
+    .header__logo {
+        width: 171px;
+        height: 123px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .header__logo {
+        width: 114px;
+        height: 82px;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+
+@media only screen and (max-device-width: 480px) {
+
+}
