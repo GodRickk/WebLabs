@@ -2,10 +2,16 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Nunito:wght@800&family=Oswald:wght@300;600&display=swap');
 
+html {
+    box-sizing: border-box;
+    min-width: 300px;
+  }
 
-:root{
-    --container-width: 1440px;
-    --container-padding: 15px;
+*,*:before, *:after {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
 }
 
 header{
@@ -64,11 +70,12 @@ footer {
 /*навигационное меню*/
 
 .header__navmenu {
-    width: 445px;
+    /* width: 445px; */
+    width: 100%;
     height: 31px;
     padding-top: 167px;
-    padding-left: 492px;
-    column-gap: 67px;
+    padding-left: 13%;
+    /* column-gap: 67px; */
     background-color: #F5F5F5;
     display: flex;
     justify-content: space-around;
@@ -116,11 +123,9 @@ footer {
 
 .wellcome-text__container {
     padding-left: 23px;
-    padding-top: 150px;
+    padding-top: 120px;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
     text-align: center;
     color: #FFFFFF;
     width: 460px;
@@ -132,10 +137,16 @@ footer {
 
 .wellcome-text__item {
     color: #FFFFFF;
-    font-size: 50px;
+    /* font-size: 40px; */
+    font-size: 2.4rem; 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
+    white-space: pre-line;
+    word-wrap: break-word;
+    display: table;
+    /* margin: 0 auto;
+    margin-bottom: 15px; */
 }
 
 
@@ -199,8 +210,8 @@ footer {
     padding-top: 66px;
     padding-left: 113px;
     padding-right: 114px;
-    max-width: 1215px;
-    width: 1215px;
+    /* max-width: 1215px;
+    width: 1215px; */
     display: flex;
     justify-content: center;
     column-gap: 157px;
@@ -258,34 +269,54 @@ footer {
         width: 228px;;
         height: 164px;
         margin-top: 30px;
-        margin-left: 10px;
     }
+
+
     
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 959px) {
     .header__logo {
         width: 171px;
         height: 123px;
         margin-top: 30px;
-        margin-left: 30px;
+        margin-left: 15px;
+    }
+
+    .header__navmenu {
+        /* width: 445px; */
+        width: 100%;
+        height: 31px;
+        padding-top: 167px;
+        padding-left: 50px;
+        column-gap: 40px;
+    }
+
+    .header__navmenu-item {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 31px;
+    
     }
 }
 
 
 
-@media only screen and (max-width: 500px) {
-    .header__logo {
-        width: 114px;
-        height: 82px;
-        border-radius: 20px;
-        margin-top: 30px;
-        margin-left: 30px;
+@media only screen and (max-width: 670px) {
+    .header__navmenu {
+
     }
 }
 
 
 @media only screen and (max-device-width: 480px) {
-
+    /*.header__logo {
+        width: 114px;
+        /* height: 82px;
+        height: 123px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }*/
 }
