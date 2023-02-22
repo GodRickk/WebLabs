@@ -349,10 +349,10 @@ footer {
 
     .brands__container {
         column-gap: 50px;
-        /* overflow: auto; */
-        padding-left: 40px;
-        padding-right: 40px;
-        column-gap: 50px;
+        overflow: auto;
+        width: 100%;
+        padding-left: 47px;
+        padding-right: 20px;
     }
 
     .img-brand__wrapper {
