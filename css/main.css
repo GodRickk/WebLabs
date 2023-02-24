@@ -21,13 +21,12 @@ header{
 
 }
 
-/*body {
+body {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Nunito', sans-serif;
     font-family: 'Oswald', sans-serif;
     background-color: #F5F5F5;
-    color: #2D2A2A;
-}*/
+}
 
 footer {
     font-family: 'Oswald', sans-serif;
@@ -245,6 +244,7 @@ footer {
     background-color: #D9D9D9;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 
 
@@ -276,6 +276,15 @@ footer {
 
 .footer-menu__container {
     font-size: 100%;
+}
+
+
+.reviews__wrapper {
+    width: 100%;
+    max-width: 1400px;
+    min-height: 76vh;
+    background-color: #FFFFFF;
+    margin: 0 auto;
 }
 
 
