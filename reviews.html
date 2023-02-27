@@ -37,9 +37,9 @@
                 <div class="reviews-column__container">
                     <div class="reviews-text__container">
                         <div class="reviews-text__item">
-                            <div class="reviews-text__raiting">
+                            <!-- <div class="reviews-text__raiting">
                                 Оценка: 5
-                            </div>
+                            </div> -->
                             <div class="reviews-text__text">
                                 текст текст hjrjr sefsssssssssssssssss ssss sss ssss ssss ssfsEfs fsefss ef kls  fsejjj jjjffff ffffffff fffff f fffff ffffffff ffffffff fffffffff
                             </div>
@@ -58,9 +58,9 @@
                     <div class="reviews-btn-text__item">
                         Вы помогаете улучшить сервис
                     </div>
-                    <div class="reviews-btn__button">
+                    <button class="open-review-form reviews-btn__button">
                         Оставить отзыв
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -96,5 +96,23 @@
             </div>
         </div>
     </footer>
+    <div class="review-form-background">
+        <form class="review-form">
+            <div class="review-form-title">
+                <!-- <img class="close-review-form" src="img/form/closekross.png"> -->
+                <h3>Ваш отзыв</h3>
+            </div>
+            <div class="review-form-main-content">
+                <label>
+                    <input id="text-review" placeholder="Ваш текст..." required type="text">
+                </label>
+                <label>
+                    <input id="user-name" placeholder="Имя пользователя..." required type="text">
+                </label>
+                <button class="review-submit-button" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/review-form-open-close.js"></script>
 </body>
 </html>
