@@ -14,10 +14,10 @@ openReviewFormButtons.forEach((button) => {
 });
 
 
-// closeReviewFormButton.addEventListener('click',() => {
-//     reviewFormBackground.classList.remove('active');
-//     reviewForm.classList.remove('active');
-// });
+closeReviewFormButton.addEventListener('click',() => {
+    reviewFormBackground.classList.remove('active');
+    reviewForm.classList.remove('active');
+});
 
 
 document.addEventListener('click', (e) => {
