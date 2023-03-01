@@ -335,9 +335,9 @@ footer {
 
 .reviews-column__container {
     box-sizing: border-box;
-    display: grid;
+    /* display: grid;
     grid-gap: 2em;
-    gap: 2em;
+    gap: 2em; */
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -518,6 +518,11 @@ footer {
     outline: none;
     border-radius: 6px;
 }
+
+.review-raiting {
+    display: flex;
+}
+
 
 .review-form-main-content {
 
