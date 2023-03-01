@@ -247,7 +247,6 @@ footer {
     margin-top: 100px;
 }
 
-
 .footer-title {
     margin-top: 50px;
     font-family: 'Oswald';
@@ -259,6 +258,8 @@ footer {
     color: #2D2A2A;
     padding-right: 50px;
 }
+
+
 
 
 .menu-text {
@@ -273,10 +274,12 @@ footer {
     padding-right: 50px
 }
 
-
 .footer-menu__container {
     font-size: 100%;
 }
+
+
+
 
 
 /* Отзывы */
