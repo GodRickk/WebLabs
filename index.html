@@ -23,7 +23,7 @@
         </nav>
 
         <div class="header__nav-border-line">
-			<img src="img\header\line-navigation-menu.svg"  style="width:100%">
+			<!-- <img src="img\header\line-navigation-menu.svg"  style="width:100%"> -->
 	    </div>
     </header>
 
@@ -52,7 +52,7 @@
                     Бренды
                 </span>
             </div>
-            <div class="brands__container">
+            <div class="brands__container" id="beauteful-carusel">
                 <img class="img-brand__wrapper" src="img/brands/asics.png" alt="">
                 <img class="img-brand__wrapper" src="img/brands/puma.png" alt="">
                 <img class="img-brand__wrapper" src="img/brands/adidas.png" alt="">
@@ -93,8 +93,26 @@
                     </ul>
                 </div>
             </div>
+            <div class="footer__column">
+                <div class="footer-title">
+                    <div class="city">
+                        Санкт-Петербург
+                    </div>
+                </div>
+                <div class="footer-menu__container">
+                    <ul class="footer-menu">
+                        <ul class="footer-menu">
+                            <li class="temp menu-text"></li>
+                            <li class="description menu-text"></li>
+                            <li class="humidity menu-text"></li>
+                            <li class="wind menu-text"></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="js/button.js"></script>
+    <script src="js/weather-api.js"></script>
 </body>
 </html>

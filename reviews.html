@@ -8,6 +8,8 @@
     <title>Reviews</title>
 </head>
 <body>
+    <div class="btn-up btn-up_hide"></div>
+    
     <header class = "header">
         <div class="header__logo">
             <a href="index.html" class="logo__link">
@@ -22,12 +24,48 @@
         </nav>
 
         <div class="header__nav-border-line">
-			<img src="img\header\line-navigation-menu.svg"  style="width:100%">
+			<!-- <img src="img\header\line-navigation-menu.svg"  style="width:100%"> -->
 	    </div>
     </header>
 
     <div class="main-content__container">
-
+        <div class="reviews__wrapper">
+            <div class="reviews-title__container">
+                <div class="reviews-title__item">
+                    Отзывы
+                </div>
+            </div>
+            <div class="reviews-column__wrapper">
+                <div class="reviews-column__container">
+                    <div class="reviews-text__container">
+                        <div class="reviews-text__item">
+                            <!-- <div class="reviews-text__raiting">
+                                Оценка: 5
+                            </div> -->
+                            <div class="reviews-text__text">
+                                текст текст hjrjr sefsssssssssssssssss ssss sss ssss ssss ssfsEfs fsefss ef kls  fsejjj jjjffff ffffffff fffff f fffff ffffffff ffffffff fffffffff
+                            </div>
+                            <div class="reviews-text__author">
+                                Евгений
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-btn__container">
+                <div class="reviews-btn-text__container">
+                    <div class="reviews-btn-text__item">
+                        Оставляя отзыв
+                    </div>
+                    <div class="reviews-btn-text__item">
+                        Вы помогаете улучшить сервис
+                    </div>
+                    <button class="open-review-form reviews-btn__button">
+                        Оставить отзыв
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -58,7 +96,53 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="footer__column">
+                <div class="footer-title">
+                    <div class="city">
+                        Санкт-Петербург
+                    </div>
+                </div>
+                <div class="footer-menu__container">
+                    <ul class="footer-menu">
+                        <ul class="footer-menu">
+                            <li class="temp menu-text"></li>
+                            <li class="description menu-text"></li>
+                            <li class="humidity menu-text"></li>
+                            <li class="wind menu-text"></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
+    <div class="review-form-background">
+        <form class="review-form">
+            <div class="review-form-title">
+                <img class="close-review-form" src="img/form/close-kross.png">
+                <h3>Ваш отзыв</h3>
+            </div>
+            <div class="review-form-main-content">
+                <label>
+                    <input id="text-review" placeholder="Ваш текст..." required type="text">
+                </label>
+                <label>
+                    <input id="user-name" placeholder="Имя пользователя..." required type="text">
+                </label>
+                <!-- <div class="review-raiting">
+                    <p style="display: flex;"><input type="radio" name="raiting">1</p>
+                    <p><input type="radio" name="raiting">2</p>
+                    <p><input type="radio" name="raiting">3</p>
+                    <p><input type="radio" name="raiting">4</p>
+                    <p><input type="radio" name="raiting">5</p>
+                </div> -->
+                <button class="review-submit-button" type="submit">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/review-form-open-close.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/weather-api.js"></script>
+    <script src="js/review-form-post.js"></script>
 </body>
 </html>
