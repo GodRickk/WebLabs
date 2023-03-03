@@ -434,7 +434,8 @@ footer {
 }
 
 .reviews-btn__button {
-    min-width: 250px;
+    max-width: 250px;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     height: 50px;
