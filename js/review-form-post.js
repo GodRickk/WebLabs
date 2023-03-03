@@ -24,21 +24,30 @@ let nameInput = document.querySelector('#user-name');
 // });
 
 
-// form.addEventListener('submit',(e) => {
-//     e.preventDefault();
-//     let textReview = textReviewInput.value;
-//     let name = nameInput.value;
-//     let template = `
-//             <div class="reviews-text__container">
-//                 <div class="reviews-text__item">
-//                     <div class="reviews-text__text">${textReview}</div>
-//                     <div class="reviews-text__author">${name}</div>   
-//                 </div>
-//             </div>`;
-//     reviewsColumnContainer.innerHTML += template;
-//     console.log()
-//     closeForm();
-// });
+form.addEventListener('submit',(e) => {
+    e.preventDefault();
+    let textReview = textReviewInput.value;
+    let name = nameInput.value;
+    let template = `
+            <div class="reviews-text__container">
+                <div class="reviews-text__item">
+                    <div class="reviews-text__text">${textReview}</div>
+                    <div class="reviews-text__author">${name}</div>   
+                </div>
+            </div>`;
+    reviewsColumnContainer.innerHTML += template;
+
+    comments.text = textReviewInput.value;
+    count++; // 1
+    comments.textId = localStorage.length + 1; // 1
+    localStorage.setItem(count, comments.text);
+
+    comments.author = nameInput.value;
+    count++; // 2
+    comments.authorId = localStorage.length + 2; // 2
+    localStorage.setItem(count, comments.author);
+    closeForm();
+});
 
 
 
@@ -50,101 +59,108 @@ function closeForm(){
 }
 
 
-form.addEventListener('submit',(e) => {
-    let textReviewInput = document.querySelector('#text-review');
-    let nameInput = document.querySelector('#user-name');
 
 
-    // Создание html элементов со стилями
-    var reviewsTextContainer = document.createElement("div");
-    reviewsTextContainer.setAttribute('class', 'reviews-text__container');
-
-    var reviewsTextItem = document.createElement("div");
-    reviewsTextItem.setAttribute('class', 'reviews-text__item');
-
-    var reviewsTextText = document.createElement('div')
-    reviewsTextText.setAttribute('class', 'reviews-text__text');
-
-    var reviewsTextAuthor = document.createElement('div')
-    reviewsTextAuthor.setAttribute('class', 'reviews-text__author');
-
-    reviewsTextText.innerHTML = textReviewInput.value;
-    reviewsTextAuthor.innerHTML = nameInput.value;
+// form.addEventListener('submit',(e) => {
+//     let textReviewInput = document.querySelector('#text-review');
+//     let nameInput = document.querySelector('#user-name');
 
 
-    // Создание DOM иерархии
-    reviewsColumnContainer.appendChild(reviewsTextContainer);
-    reviewsTextContainer.appendChild(reviewsTextItem);
-    reviewsTextItem.appendChild(reviewsTextText);
-    reviewsTextItem.appendChild(reviewsTextAuthor);
+//     // Создание html элементов со стилями
+//     var reviewsTextContainer = document.createElement("div");
+//     reviewsTextContainer.setAttribute('class', 'reviews-text__container');
+
+//     var reviewsTextItem = document.createElement("div");
+//     reviewsTextItem.setAttribute('class', 'reviews-text__item');
+
+//     var reviewsTextText = document.createElement('div')
+//     reviewsTextText.setAttribute('class', 'reviews-text__text');
+
+//     var reviewsTextAuthor = document.createElement('div')
+//     reviewsTextAuthor.setAttribute('class', 'reviews-text__author');
+
+//     reviewsTextText.innerHTML = textReviewInput.value;
+//     reviewsTextAuthor.innerHTML = nameInput.value;
 
 
-    comments.text = textReviewInput.value;
-    count++; // 1
-    comments.textId = localStorage.length + 1; // 1
-    localStorage.setItem(count, comments.text);
+//     // Создание DOM иерархии
+//     reviewsColumnContainer.appendChild(reviewsTextContainer);
+//     reviewsTextContainer.appendChild(reviewsTextItem);
+//     reviewsTextItem.appendChild(reviewsTextText);
+//     reviewsTextItem.appendChild(reviewsTextAuthor);
 
 
-    comments.author = nameInput.value;
-    count++; // 2
-    comments.authorId = localStorage.length + 2; // 2
-    localStorage.setItem(count, comments.author);
-    closeForm();
-});
-
-function createComment() {
-    let textReviewInput = document.querySelector('#text-review');
-    let nameInput = document.querySelector('#user-name');
-
-    // comments.text = textReviewInput.value;
-    // comments.author = nameInput.value;
-
-    // count++; // 1
-    // comments.textId = localStorage.length + 1; // 1
-    // count++; // 2
-    // comments.authorId = localStorage.length + 2; // 2
+//     comments.text = textReviewInput.value;
+//     count++; // 1
+//     comments.textId = localStorage.length + 1; // 1
+//     localStorage.setItem(count, comments.text);
 
 
-    // Создание html элементов со стилями
-    var reviewsTextContainer = document.createElement("div");
-    reviewsTextContainer.setAttribute('class', 'reviews-text__container');
-
-    var reviewsTextItem = document.createElement("div");
-    reviewsTextItem.setAttribute('class', 'reviews-text__item');
-
-    var reviewsTextText = document.createElement('div')
-    reviewsTextText.setAttribute('class', 'reviews-text__text');
-
-    var reviewsTextAuthor = document.createElement('div')
-    reviewsTextAuthor.setAttribute('class', 'reviews-text__author');
+//     comments.author = nameInput.value;
+//     count++; // 2
+//     comments.authorId = localStorage.length + 2; // 2
+//     localStorage.setItem(count, comments.author);
+//     closeForm();
+// });
 
 
-    // Текст комментраия и автор
-    // reviewsTextText.innerHTML = comments.text;
-    // reviewsTextAuthor.innerHTML = comments.author;
-
-    reviewsTextText.innerHTML = textReviewInput.value;
-    reviewsTextAuthor.innerHTML = nameInput.value;
 
 
-    // Создание DOM иерархии
-    reviewsColumnContainer.appendChild(reviewsTextContainer);
-    reviewsTextContainer.appendChild(reviewsTextItem);
-    reviewsTextItem.appendChild(reviewsTextText);
-    reviewsTextItem.appendChild(reviewsTextAuthor);
+// function createComment() {
+//     let textReviewInput = document.querySelector('#text-review');
+//     let nameInput = document.querySelector('#user-name');
+
+//     // comments.text = textReviewInput.value;
+//     // comments.author = nameInput.value;
+
+//     // count++; // 1
+//     // comments.textId = localStorage.length + 1; // 1
+//     // count++; // 2
+//     // comments.authorId = localStorage.length + 2; // 2
 
 
-    comments.text = textReviewInput.value;
-    count++; // 1
-    comments.textId = localStorage.length + 1; // 1
-    localStorage.setItem(count, comments.text);
+//     // Создание html элементов со стилями
+//     var reviewsTextContainer = document.createElement("div");
+//     reviewsTextContainer.setAttribute('class', 'reviews-text__container');
+
+//     var reviewsTextItem = document.createElement("div");
+//     reviewsTextItem.setAttribute('class', 'reviews-text__item');
+
+//     var reviewsTextText = document.createElement('div')
+//     reviewsTextText.setAttribute('class', 'reviews-text__text');
+
+//     var reviewsTextAuthor = document.createElement('div')
+//     reviewsTextAuthor.setAttribute('class', 'reviews-text__author');
 
 
-    comments.author = nameInput.value;
-    count++; // 2
-    comments.authorId = localStorage.length + 2; // 2
-    localStorage.setItem(count, comments.author);
-}
+//     // Текст комментраия и автор
+//     // reviewsTextText.innerHTML = comments.text;
+//     // reviewsTextAuthor.innerHTML = comments.author;
+
+//     reviewsTextText.innerHTML = textReviewInput.value;
+//     reviewsTextAuthor.innerHTML = nameInput.value;
+
+
+//     // Создание DOM иерархии
+//     reviewsColumnContainer.appendChild(reviewsTextContainer);
+//     reviewsTextContainer.appendChild(reviewsTextItem);
+//     reviewsTextItem.appendChild(reviewsTextText);
+//     reviewsTextItem.appendChild(reviewsTextAuthor);
+
+
+//     comments.text = textReviewInput.value;
+//     count++; // 1
+//     comments.textId = localStorage.length + 1; // 1
+//     localStorage.setItem(count, comments.text);
+
+
+//     comments.author = nameInput.value;
+//     count++; // 2
+//     comments.authorId = localStorage.length + 2; // 2
+//     localStorage.setItem(count, comments.author);
+// }
+
+
 
 
 function showReviews() {
@@ -178,36 +194,7 @@ function showReviews() {
 
 function pageLoad() {
     showReviews();
+    //localStorage.clear();
 }
 
 window.addEventListener('load', pageLoad);
-
-
-
-
-// заготовка
-// добавить все в евент листнер и посмотреть как будет работать
-// сохранение извлечение из локального хранилища
-
-// var reviewsTextContainer = document.createElement("div");
-// reviewsTextContainer.setAttribute('class', 'reviews-text__container');
-
-// var reviewsTextItem = document.createElement("div");
-// reviewsTextItem.setAttribute('class', 'reviews-text__item');
-
-// var reviewsTextText = document.createElement('div')
-// reviewsTextText.setAttribute('class', 'reviews-text__text');
-
-// var reviewsTextAuthor = document.createElement('div')
-// reviewsTextAuthor.setAttribute('class', 'reviews-text__author');
-
-// let textReview = textReviewInput.value;
-// let authorName = nameInput.value;
-
-// reviewsTextText.innerHTML = textReview;
-// reviewsTextAuthor.innerHTML = authorName;
- 
-// reviewsTextContainer.appendChild(reviewsTextItem);
-// reviewsTextItem.appendChild(reviewsTextText);
-// reviewsTextItem.appendChild(reviewsTextAuthor);
-// reviewsColumnContainer.appendChild(reviewsTextContainer);
