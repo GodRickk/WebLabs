@@ -8,6 +8,8 @@
     <title>Reviews</title>
 </head>
 <body>
+    <div class="btn-up btn-up_hide"></div>
+    
     <header class = "header">
         <div class="header__logo">
             <a href="index.html" class="logo__link">
@@ -22,7 +24,7 @@
         </nav>
 
         <div class="header__nav-border-line">
-			<img src="img\header\line-navigation-menu.svg"  style="width:100%">
+			<!-- <img src="img\header\line-navigation-menu.svg"  style="width:100%"> -->
 	    </div>
     </header>
 
@@ -94,6 +96,24 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="footer__column">
+                <div class="footer-title">
+                    <div class="city">
+                        Санкт-Петербург
+                    </div>
+                </div>
+                <div class="footer-menu__container">
+                    <ul class="footer-menu">
+                        <ul class="footer-menu">
+                            <li class="temp menu-text"></li>
+                            <li class="description menu-text"></li>
+                            <li class="humidity menu-text"></li>
+                            <li class="wind menu-text"></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
     <div class="review-form-background">
@@ -121,5 +141,8 @@
         </form>
     </div>
     <script src="js/review-form-open-close.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/weather-api.js"></script>
+    <script src="js/review-form-post.js"></script>
 </body>
 </html>

@@ -43,6 +43,7 @@ footer {
 .header{
     min-height: 230px;
     background-color: #F5F5F5;
+    position: relative;
 }
 
 .header__logo {
@@ -57,12 +58,17 @@ footer {
 
 
 .header__nav-border-line {
-    position: absolute;
+    /* position: absolute;
     width: 100%;
     height: 0px;
     left: 0px;
     top: 187px;
-    border: 1px solid #777777;
+    border: 1px solid #777777; */
+    width: 100%;
+    height: 2px;
+    background-color: #777777;
+    position: absolute;
+    bottom: 40px;
 }
 
 
@@ -247,7 +253,6 @@ footer {
     margin-top: 100px;
 }
 
-
 .footer-title {
     margin-top: 50px;
     font-family: 'Oswald';
@@ -259,6 +264,8 @@ footer {
     color: #2D2A2A;
     padding-right: 50px;
 }
+
+
 
 
 .menu-text {
@@ -273,10 +280,12 @@ footer {
     padding-right: 50px
 }
 
-
 .footer-menu__container {
     font-size: 100%;
 }
+
+
+
 
 
 /* Отзывы */
@@ -431,7 +440,8 @@ footer {
 }
 
 .reviews-btn__button {
-    min-width: 250px;
+    max-width: 250px;
+    width: 100%;
     padding-left: 10px;
     padding-right: 10px;
     height: 50px;
