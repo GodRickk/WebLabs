@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@300;400&family=Nunito:wght@800&family=Oswald:wght@300;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(31, 33, 40, 1);
+}
+
+main {
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+}
+
+/*.fields-container {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    max-width: 400px;
+}*/
+
+.login-text {
+    font-family: 'Anton', sans-serif;
+    padding: 27px 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .login-text:hover {
+        color: #000;
+    }
+  }
+
+
+.login-form-container {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.login-form-container input {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    font-size: 14px;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.container .btn-login {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 250, 247, 1);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #777777;
+    border: none;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+/*.fields-container input, .container .btn-login {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+}*/
+
+
+/*input к классу fields-container*/
+
+/*.fields-container input {
+    border: 1px solid #dddfe2;
+    font-size: 14px;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+    border-radius: 6px;
+}*/
+
+/*.container .btn-login{
+    user-select: none;
+    font-family: 'Inter', sans-serif;
+    color: rgba(255, 250, 247, 1);
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #777777;
+    border: none;
+    border-radius: 6px;
+    padding: 0 16px;
+}*/
+
+
+.btn-login:hover {
+    color: white;
+    box-shadow: 0 0 7px #777777;
+    background-color: #1d2129;
+}
+
+/*.btn-login:active{
+    background-color: #777777;
+}/
+
+
+
+
+.review-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: fit-content;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fafafa;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px 20px 30px;
+    transition: 0.3s all;
+}
+
+.review-form.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.3s all;
+}
+
+.review-form-title {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.review-form input {
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    width: 95%;
+    height: 40px;
+    vertical-align: middle;
+    padding-left: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 6px;
+}
